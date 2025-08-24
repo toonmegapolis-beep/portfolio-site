@@ -1,103 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GlobalReach E-commerce</title>
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
-    body {font-family: Arial, sans-serif; line-height:1.6; background:#f9f9f9; color:#333;}
-    header {background:#007acc; color:white; padding:1rem; position:sticky; top:0;}
-    nav {display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto;}
-    nav ul {list-style:none; display:flex; gap:20px;}
-    nav a {color:white; text-decoration:none; font-weight:bold;}
-    section {padding:3rem 1rem; max-width:1200px; margin:auto;}
-    h1, h2, h3 {margin-bottom:1rem;}
-    .hero {text-align:center; padding:4rem 1rem; background:linear-gradient(to right, #007acc, #00bfa6); color:white;}
-    .services {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:1.5rem; margin-top:2rem;}
-    .card {background:white; padding:1.5rem; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-    .contact form {display:flex; flex-direction:column; gap:1rem; max-width:500px; margin:auto;}
-    input, textarea, button {padding:0.8rem; border:1px solid #ddd; border-radius:5px; font-size:1rem;}
-    button {background:#007acc; color:white; border:none; cursor:pointer; transition:background 0.3s;}
-    button:hover {background:#005fa3;}
-    footer {text-align:center; padding:1rem; background:#333; color:white;}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <nav>
-      <h1>GlobalReach E-commerce</h1>
+      <h1>My Portfolio</h1>
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#marketplaces">Marketplaces</a></li>
-        <li><a href="#software">Software</a></li>
-        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Empowering Global Commerce</h1>
-    <p>We connect businesses with opportunities worldwide through online marketplaces, live streaming, and powerful e-commerce solutions.</p>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm learning how to build websites from scratch. This is my first portfolio project.</p>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Online Marketplaces</h3>
-        <p>Helping you sell across multiple global platforms with ease.</p>
-      </div>
-      <div class="card">
-        <h3>Live Streaming Commerce</h3>
-        <p>Engage customers in real-time and boost conversions through interactive streaming.</p>
-      </div>
-      <div class="card">
-        <h3>Software & Apps</h3>
-        <p>Custom solutions to manage inventory, payments, and analytics.</p>
-      </div>
-      <div class="card">
-        <h3>Cross-border Solutions</h3>
-        <p>Seamless logistics, payment integration, and localization to reach new markets.</p>
-      </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A description of my first project.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>A description of my second project.</p>
     </div>
   </section>
 
-  <section id="marketplaces">
-    <h2>Global Marketplaces</h2>
-    <p>We integrate with leading platforms such as Amazon, Alibaba, Lazada, and Shopee, giving you a wider reach.</p>
-  </section>
-
-  <section id="software">
-    <h2>Custom Software & Applications</h2>
-    <p>From mobile apps to enterprise dashboards, we develop tools that power your e-commerce business.</p>
-  </section>
-
-  <section id="solutions">
-    <h2>Cross-Border E-commerce Solutions</h2>
-    <p>We provide end-to-end services including customs clearance, multi-currency payments, translation, and customer support.</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
     <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5"></textarea>
-      <button type="submit">Send Message</button>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 GlobalReach E-commerce. All rights reserved.</p>
+    <p>© 2025 My Portfolio</p>
   </footer>
 
-  <script>
-    document.querySelector("form").addEventListener("submit", function(e){
-      e.preventDefault();
-      alert("Thank you for contacting us! We will get back to you soon.");
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
